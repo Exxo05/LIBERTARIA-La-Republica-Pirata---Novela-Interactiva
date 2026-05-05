@@ -1,5 +1,7 @@
-# LIBERTARIA – La República Pirata (En desarrollo)
-### Novela Interactiva Web
+# LIBERTARIA – La República Pirata . Novela Interactiva Web (En desarrollo) 
+<p align="center">
+  <img src="libertaria/libertaria/portada.png" alt="LIBERTARIA – La República Pirata" width="600">
+</p>
 
 **LIBERTARIA – La República Pirata** es una novela interactiva en formato web, donde las decisiones del lector influyen directamente en el desarrollo de la historia y conducen a diferentes finales.
 
