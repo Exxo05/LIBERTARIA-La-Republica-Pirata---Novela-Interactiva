@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Libertaria — La República Pirata</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ══ MENÚ PRINCIPAL ══ -->
+  <section id="menu">
+    <div class="menu-hero">
+      <div class="menu-skull">☠</div>
+      <h1>LIBERTARIA</h1>
+      <p class="menu-tagline">La República Pirata · Una Novela Interactiva</p>
+    </div>
+
+    <div class="menu-grid">
+      <div class="panel">
+        <h2>⚓ Slots de Partida</h2>
+        <div id="slots" class="slots"></div>
+        <div class="actions">
+          <button id="btnNew" class="btn-primary">Nueva partida</button>
+          <button id="btnContinue">Continuar</button>
+          <button id="btnDelete" class="btn-ghost">Borrar slot</button>
+        </div>
+        <p class="hint" id="slotHint"></p>
+      </div>
+
+      <div class="panel">
+        <h2>📖 Rejugar capítulos</h2>
+        <div id="chapterList" class="chapters"></div>
+        <p class="hint">Se desbloquean al completar cada capítulo en el slot activo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ TRANSICIÓN DE CAPÍTULO ══ -->
+  <section id="chapter-transition" class="hidden">
+    <div class="ct-icon" id="ctIcon">⚓</div>
+    <p class="ct-label">Capítulo <span id="ctNum"></span></p>
+    <h2 class="ct-title" id="ctTitle"></h2>
+    <div class="ct-line"></div>
+    <p class="ct-sub" id="ctSub"></p>
+  </section>
+
+  <!-- ══ JUEGO ══ -->
+  <section id="game" class="hidden">
+    <div class="scene-wrap">
+      <div id="scene-image"></div>
+      <div class="scene-vignette"></div>
+
+      <div class="hud">
+        <div class="hud-left">
+          <span class="hud-badge" id="hudSlot"></span>
+          <span class="hud-badge" id="hudChapter"></span>
+          <div id="inventory"></div>
+        </div>
+        <div class="hud-right">
+          <button id="btnSave">Guardar</button>
+          <button id="btnBackMenu">← Menú</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-bottom">
+      <div id="scene-text"></div>
+      <div id="choices"></div>
+    </div>
+  </section>
+
+  <!-- Toast de guardado -->
+  <div id="save-toast">✦ Partida guardada</div>
+
+  <!-- Orden crítico de scripts -->
+  <script src="data/ascii_art.js"></script>
+  <script src="data/chapter1.js"></script>
+  <script src="data/chapter2.js"></script>
+  <script src="data/chapter3.js"></script>
+  <script src="data/chapter4.js"></script>
+  <script src="data/chapter5.js"></script>
+  <script src="data/chapter6.js"></script>
+  <script src="data/chapter7.js"></script>
+  <script src="js/save.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>
